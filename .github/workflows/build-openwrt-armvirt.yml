@@ -11,9 +11,9 @@ name: Build OpenWrt armvirt
 on:
   release:
     types: [published]
-  push:
-    branches:
-      - master
+  #push:
+  #  branches:
+  #    - master
     paths:
       - '.config'
   schedule:
@@ -22,8 +22,8 @@ on:
     types: [started]
 
 env:
-  REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: dev-master
+  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_BRANCH: master
   CONFIG_FILE: armvirt.config
   DIY_SH: diy.sh
   FREE_UP_DISK: false
