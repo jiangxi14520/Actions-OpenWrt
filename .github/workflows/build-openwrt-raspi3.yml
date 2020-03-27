@@ -13,9 +13,9 @@ on:
     types: [published]
   push:
     branches:
-      - master
+     - master
     paths:
-      - '.config'
+     - 'raspi3.config'
   schedule:
     - cron: 0 8 * * 5
   watch:
