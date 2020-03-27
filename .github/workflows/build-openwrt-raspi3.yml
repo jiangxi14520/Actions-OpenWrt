@@ -9,7 +9,7 @@
 name: Build OpenWrt raspi3
 
 on:
-  release:
+ release:
     types: [published]
  push:
     branches: 
