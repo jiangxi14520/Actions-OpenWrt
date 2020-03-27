@@ -11,7 +11,7 @@ name: Build OpenWrt raspi3
 on:
   release:
     types: [published]
-   push:
+  push:
     branches:
       - master
     paths:
