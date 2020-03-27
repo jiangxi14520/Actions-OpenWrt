@@ -11,9 +11,9 @@ name: Build OpenWrt raspi3
 on:
   release:
     types: [published]
-  # push:
-  #  branches:
-  #    - master
+   push:
+    branches:
+      - master
     paths:
       - '.config'
   schedule:
@@ -23,7 +23,7 @@ on:
 
 env:
   REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: dev-master
+  REPO_BRANCH: dev-lean-lede
   CONFIG_FILE: raspi3.config
   DIY_SH: diy.sh
   FREE_UP_DISK: false
